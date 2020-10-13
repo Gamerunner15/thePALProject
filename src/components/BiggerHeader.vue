@@ -2,8 +2,12 @@
   <div id="bigger-header">
     <header>
       <div id="left">
+        <router-link to="/">
         <img src="..\assets\PAL_Logo.png" />
+        </router-link>
+        <router-link to="/">
         <h1>The Pan-African Library</h1>
+        </router-link>
       </div>
       <div id="right">
         <h2>Search</h2>
@@ -26,7 +30,7 @@
         <div class="first-dropdown">
           <div v-for="region in locales" :key="region.name">
             <div class="region-button">
-              <a>{{ region.name }}</a>
+              <router-link to="/content/:region.name">{{ region.name }}</router-link>
             </div>
             <div class="all-countries">
               <div class="second-dropdown">

@@ -3,137 +3,147 @@
     <div class="banner">
       <img src="..\assets\cloths.jpg" />
     </div>
-    <h1 class="topic-title">Cultural Topic</h1>
+    <h1 class="topic-title">#Topics</h1>
     <div class="content-row">
       <i class="fa fa-angle-left"></i>
       <div class="content-preview">
-        <h2>Title</h2>
+        <h2>Borborbor Rituals</h2>
         <img src="..\assets\woman-green-head.jpg" />
         <div class="tags">
-            <p class="tag">#Content Tag</p>
-            <p class="tag">#Content Tag</p>
+          <p class="tag">#NorthAfrica</p>
+          <p class="tag">#Borborbor</p>
         </div>
       </div>
       <div class="content-preview">
-        <h2>Title</h2>
+        <h2>Ekombi Families</h2>
         <img src="..\assets\man-red-background.jpg" />
         <div class="tags">
-            <p class="tag">#Content Tag</p>
-            <p class="tag">#Content Tag</p>
+          <p class="tag">#SouthAfrica</p>
+          <p class="tag">#Ekombi</p>
         </div>
       </div>
       <div class="content-preview">
-        <h2>Title</h2>
+        <h2>Bambara Foods</h2>
         <img src="..\assets\woman-in-crowd.jpg" />
         <div class="tags">
-            <p class="tag">#Content Tag</p>
-            <p class="tag">#Content Tag</p>
+          <p class="tag">#WestAfrica</p>
+          <p class="tag">#Bambara</p>
         </div>
       </div>
       <div class="content-preview">
-        <h2>Title</h2>
+        <h2>Kente Clothing</h2>
         <img src="..\assets\woman-smiling.jpg" />
         <div class="tags">
-            <p class="tag">#Content Tag</p>
-            <p class="tag">#Content Tag</p>
+          <p class="tag">#SouthAmerica</p>
+          <p class="tag">#Kente</p>
         </div>
       </div>
       <div class="content-preview">
-        <h2>Title</h2>
+        <h2>Lukonzo in Heart</h2>
         <img src="..\assets\woman-pink-background.jpg" />
-       <div class="tags">
-            <p class="tag">#Content Tag</p>
-            <p class="tag">#Content Tag</p>
+        <div class="tags">
+          <p class="tag">#Caribbean</p>
+          <p class="tag">#Lukonzo</p>
         </div>
       </div>
       <i class="fa fa-angle-right"></i>
     </div>
-    <h1 class="topic-title">Cultural Topic</h1>
+    <h1 class="topic-title">Genres</h1>
     <div class="content-row">
       <i class="fa fa-angle-left"></i>
       <div class="content-preview">
-        <h2>Title</h2>
+        <h2>Xhosa</h2>
         <img src="..\assets\woman-green-head.jpg" />
         <div class="tags">
-            <p class="tag">#Content Tag</p>
-            <p class="tag">#Content Tag</p>
+          <p class="tag">Folktale</p>
         </div>
       </div>
       <div class="content-preview">
-        <h2>Title</h2>
+        <h2>Ananse</h2>
         <img src="..\assets\man-red-background.jpg" />
         <div class="tags">
-            <p class="tag">#Content Tag</p>
-            <p class="tag">#Content Tag</p>
+          <p class="tag">History</p>
         </div>
       </div>
       <div class="content-preview">
-        <h2>Title</h2>
+        <h2>Brer Rabbit</h2>
         <img src="..\assets\woman-in-crowd.jpg" />
         <div class="tags">
-            <p class="tag">#Content Tag</p>
-            <p class="tag">#Content Tag</p>
+          <p class="tag">Comedy</p>
         </div>
       </div>
       <div class="content-preview">
-        <h2>Title</h2>
+        <h2>Agbadza</h2>
         <img src="..\assets\woman-smiling.jpg" />
         <div class="tags">
-            <p class="tag">#Content Tag</p>
-            <p class="tag">#Content Tag</p>
+          <p class="tag">Tradition</p>
         </div>
       </div>
       <div class="content-preview">
-        <h2>Title</h2>
+        <h2>Swathi on Guard</h2>
         <img src="..\assets\woman-pink-background.jpg" />
-       <div class="tags">
-            <p class="tag">#Content Tag</p>
-            <p class="tag">#Content Tag</p>
+        <div class="tags">
+          <p class="tag">Drama</p>
         </div>
       </div>
       <i class="fa fa-angle-right"></i>
     </div>
-    <h1 class="topic-title">Cultural Topic</h1>
+    <h1 class="topic-title">For You</h1>
     <div class="content-row">
       <i class="fa fa-angle-left"></i>
       <div class="content-preview">
-        <h2>Title</h2>
+
         <img src="..\assets\woman-green-head.jpg" />
-        <div class="tags">
-            <p class="tag">#Content Tag</p>
-            <p class="tag">#Content Tag</p>
-        </div>
+        <div class="tags"></div>
       </div>
       <div class="content-preview">
-        <h2>Title</h2>
+
         <img src="..\assets\man-red-background.jpg" />
-        <div class="tags">
-            <p class="tag">#Content Tag</p>
-            <p class="tag">#Content Tag</p>
-        </div>
+        <div class="tags"></div>
       </div>
       <div class="content-preview">
-        <h2>Title</h2>
+
         <img src="..\assets\woman-in-crowd.jpg" />
-        <div class="tags">
-            <p class="tag">#Content Tag</p>
-            <p class="tag">#Content Tag</p>
-        </div>
+        <div class="tags"></div>
       </div>
       <div class="content-preview">
-        <h2>Title</h2>
+    
         <img src="..\assets\woman-smiling.jpg" />
-        <div class="tags">
-            <p class="tag">#Content Tag</p>
-            <p class="tag">#Content Tag</p>
+        <div class="tags"></div>
+      </div>
+      <div class="content-preview">
+    
+        <img src="..\assets\woman-pink-background.jpg" />
+        <div class="tags"></div>
+      </div>
+      <i class="fa fa-angle-right"></i>
+    </div>
+    <h1 class="topic-title">#Hashtags</h1>
+    <div class="content-row tag-row">
+      <i class="fa fa-angle-left"></i>
+      <div class="content-preview">
+        <div class="tags" style="background-color: black;">
+          <p class="tag">#SouthAfrica</p>
         </div>
       </div>
       <div class="content-preview">
-        <h2>Title</h2>
-        <img src="..\assets\woman-pink-background.jpg" />
-       <div class="tags">
-            <p class="tag">#Content Tag</p>
-            <p class="tag">#Content Tag</p>
+        <div class="tags" style="background-color: red;">
+          <p class="tag">#NorthAfrica</p>
+        </div>
+      </div>
+      <div class="content-preview">
+        <div class="tags"  style="background-color: orange;">
+          <p class="tag">#Yoruba</p>
+        </div>
+      </div>
+      <div class="content-preview">
+        <div class="tags"  style="background-color: #007BA7;">
+          <p class="tag">#Khasa</p>
+        </div>
+      </div>
+      <div class="content-preview"  style="background-color: salmon;">
+        <div class="tags">
+          <p class="tag">#Ukara</p>
         </div>
       </div>
       <i class="fa fa-angle-right"></i>
@@ -170,9 +180,9 @@ export default {};
   i {
     font-size: 50px;
   }
-  i:hover{
-       transform: scale(1.5);
-       cursor: pointer;
+  i:hover {
+    transform: scale(1.5);
+    cursor: pointer;
   }
 }
 .topic-title {
@@ -185,24 +195,34 @@ export default {};
 }
 
 .content-preview {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    border: 5px solid black;
-    border-radius: 6px;
-    background-color: black;
-    color: white;
-    transition: all .2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 5px solid black;
+  border-radius: 6px;
+  background-color: black;
+  color: white;
+  transition: all 0.2s ease-in-out;
 }
 .content-preview:hover {
-     transform: scale(1.5);
-     cursor: pointer;
+  transform: scale(1.5);
+  cursor: pointer;
 }
 .tags {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.tag-row {
+  .tags {
+    width: 250px;
+    height: 150px;
+    p {
+      font-size: 40px;
+    }
+  }
 }
 </style>
