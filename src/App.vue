@@ -8,10 +8,15 @@
 *{
   margin: 0px;
 }
+a, router-link {
+  text-decoration: none;
+  color: white;
+}
 h1 {
   font-family: Cinzel;
 }
 p {
   font-family: Neuton;
+  font-size: 20px;
 }
 </style>

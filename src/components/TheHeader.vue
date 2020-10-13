@@ -14,7 +14,7 @@
     <div class="bar"></div>
     <div class="navigation">
       <div class="dropdown">
-        <button class="dropbtn">Categories</button>
+        <button class="dropbtn">Genres</button>
         <div class="dropdown-content">
           <a href="#">Link 1</a>
           <a href="#">Link 2</a>
@@ -22,7 +22,7 @@
         </div>
       </div>
       <div class="dropdown">
-        <button class="dropbtn">Categories</button>
+        <button class="dropbtn"></button>
         <div class="dropdown-content">
           <a href="#">Link 1</a>
           <a href="#">Link 2</a>
@@ -30,7 +30,7 @@
         </div>
       </div>
       <div class="dropdown">
-        <button class="dropbtn">Categories</button>
+        <button class="dropbtn">Regions</button>
         <div class="dropdown-content">
           <a href="#">Link 1</a>
           <a href="#">Link 2</a>

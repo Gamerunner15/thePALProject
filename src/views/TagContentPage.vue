@@ -1,21 +1,21 @@
 <template>
   <div>
     <bigger-header />
-    <the-body />
+    <tag-content v-bind:tag="{tag}" />
     <the-footer />
   </div>
 </template>
 
 <script>
 import BiggerHeader from '@/components/BiggerHeader'
-import TheBody from '@/components/TheBody'
+import TagContent from '@/components/TagContent'
 import TheFooter from '@/components/TheFooter'
 
 export default {
   name: 'Home',
   components: {
     BiggerHeader,
-    TheBody,
+    TagContent,
     TheFooter
   }
 }
