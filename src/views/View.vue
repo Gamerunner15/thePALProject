@@ -1,7 +1,7 @@
 <template>
   <div>
     <the-header />
-    <landing />
+    <content />
     <the-footer />
   </div>
 </template>
@@ -9,14 +9,14 @@
 <script>
 // @ is an alias to /src
 import TheHeader from '@/components/TheHeader'
-import Landing from '@/components/Landing'
+import Content from '@/components/Content'
 import TheFooter from '@/components/TheFooter'
 
 export default {
-  name: 'Second',
+  name: 'View',
   components: {
     TheHeader,
-    Landing,
+    Content,
     TheFooter
   }
 }

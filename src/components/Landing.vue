@@ -13,8 +13,8 @@
               <h2 class="title">Title</h2>
               <img src="..\assets\woman-green-head.jpg" />
               <div class="tags">
-                  <p class="tag">#Content Tag</p>
-                  <p class="tag">#Content Tag</p>
+                  <a href="/tag">#ContentTag</a>
+                  <a href="/tag">#ContentTag</a>
               </div>
             </div>
           </a>
@@ -23,8 +23,8 @@
               <h2 class="title">Title</h2>
               <img src="..\assets\man-red-background.jpg" />
               <div class="tags">
-                  <p class="tag">#Content Tag</p>
-                  <p class="tag">#Content Tag</p>
+                  <a href="/tag">#ContentTag</a>
+                  <a href="/tag">#ContentTag</a>
               </div>
             </div>
           </a>
@@ -33,8 +33,8 @@
               <h2 class="title">Title</h2>
               <img src="..\assets\woman-in-crowd.jpg" />
               <div class="tags">
-                  <p class="tag">#Content Tag</p>
-                  <p class="tag">#Content Tag</p>
+                  <a href="/tag">#ContentTag</a>
+                  <a href="/tag">#ContentTag</a>
               </div>
             </div>
           </a>
@@ -43,8 +43,8 @@
               <h2 class="title">Title</h2>
               <img src="..\assets\woman-smiling.jpg" />
               <div class="tags">
-                  <p class="tag">#Content Tag</p>
-                  <p class="tag">#Content Tag</p>
+                  <a href="/tag">#ContentTag</a>
+                  <a href="/tag">#ContentTag</a>
               </div>
             </div>
           </a>
@@ -53,8 +53,8 @@
               <h2 class="title">Title</h2>
               <img src="..\assets\woman-pink-background.jpg" />
               <div class="tags">
-                    <p class="tag">#Content Tag</p>
-                    <p class="tag">#Content Tag</p>
+                    <a href="/tag">#ContentTag</a>
+                    <a href="/tag">#ContentTag</a>
               </div>
             </div>
           </a>
@@ -65,8 +65,8 @@
               <h2 class="title">Title</h2>
               <img src="..\assets\woman-in-crowd.jpg" />
               <div class="tags">
-                  <p class="tag">#Content Tag</p>
-                  <p class="tag">#Content Tag</p>
+                  <a href="/tag">#ContentTag</a>
+                  <a href="/tag">#ContentTag</a>
               </div>
             </div>
           </a>
@@ -75,8 +75,8 @@
               <h2 class="title">Title</h2>
               <img src="..\assets\man-red-background.jpg" />
               <div class="tags">
-                  <p class="tag">#Content Tag</p>
-                  <p class="tag">#Content Tag</p>
+                  <a href="/tag">#ContentTag</a>
+                  <a href="/tag">#ContentTag</a>
               </div>
             </div>
           </a>
@@ -85,8 +85,8 @@
               <h2 class="title">Title</h2>
               <img src="..\assets\woman-green-head.jpg" />
               <div class="tags">
-                  <p class="tag">#Content Tag</p>
-                  <p class="tag">#Content Tag</p>
+                <a href="/tag">#ContentTag</a>
+                <a href="/tag">#ContentTag</a>
               </div>
             </div>
           </a>
@@ -95,8 +95,8 @@
               <h2 class="title">Title</h2>
               <img src="..\assets\woman-pink-background.jpg" />
               <div class="tags">
-                  <p class="tag">#Content Tag</p>
-                  <p class="tag">#Content Tag</p>
+                <a href="/tag">#ContentTag</a>
+                <a href="/tag">#ContentTag</a>
               </div>
             </div>
           </a>
@@ -104,9 +104,9 @@
             <div class="content-preview">
               <h2 class="title">Title</h2>
               <img src="..\assets\woman-smiling.jpg" />
-            <div class="tags">
-                  <p class="tag">#Content Tag</p>
-                  <p class="tag">#Content Tag</p>
+              <div class="tags">
+                <a href="/tag">#ContentTag</a>
+                <a href="/tag">#ContentTag</a>
               </div>
             </div>
           </a>
@@ -126,12 +126,6 @@ export default {};
 <style lang="scss">
   .info { 
     text-align: center;
-  }
-  .title {
-    position: relative;
-    text-align: center;
-    color: white;
-    width: 50%;
   }
   .body { 
     display: flex;
@@ -169,8 +163,26 @@ export default {};
       cursor: pointer;
       z-index: 2;
     }
-  }
-  img { 
-    height: 50px;
+    .title {
+      margin: auto;
+      text-align: center;
+      color: white;
+      width: 50%;
+      text-decoration: underline;
+      font-style: italic;
+    }
+    img { 
+      height: 200px;
+    }
+    .tags { 
+      margin: auto;
+      a:link {
+        color: white;
+        text-decoration: none;
+      }
+      a:hover {
+        color: lightgray;
+      }
+    }
   }
 </style>
