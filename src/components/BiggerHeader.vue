@@ -14,15 +14,27 @@
     <div class="bar"></div>
     <div class="navigation">
       <div class="dropdown">
-        <button class="dropbtn">Genres</button>
-        <div class="dropdown-content">
-          <a v-for="genre in genres" :key="genre" href="#">{{genre}}</a>
+        <button class="dropbtn"><h1>Genres</h1></button>
+        <div class="first-dropdown">
+          <div v-for="genre in genres" :key="genre">
+            <a class="region-button">{{ genre }}</a>
+          </div>
         </div>
       </div>
       <div class="dropdown">
-        <button class="dropbtn">Regions</button>
-        <div class="dropdown-content">
-          <a v-for="region in locales" :key="region.name" href="#">{{region.name}}</a>
+        <button class="dropbtn"><h1>Regions</h1></button>
+        <div class="first-dropdown">
+          <div v-for="region in locales" :key="region.name">
+            <div class="region-button">
+              <a>{{ region.name }}</a>
+            </div>
+            <div class="all-countries">
+              <div class="second-dropdown">
+                  <a v-for="country in region.countries"
+                :key="country.name" class="country-button">{{ country.name }}</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -31,7 +43,7 @@
 </template>
 
 <script>
-import FakeService from '@/services/FakeService.js'
+import FakeService from "@/services/FakeService.js";
 
 export default {
   name: "bigger-header",
@@ -99,49 +111,70 @@ export default {
     align-items: center;
   }
 
-  //Stolen CSS
+  //Dopdown CSS
   .dropbtn {
     background-color: black;
     color: white;
     border: none;
-    font-family: Neuton;
-    font-size: 18px;
-    min-width: 100px;
+    font-size: 30px;
     cursor: pointer;
   }
-
   .dropdown {
     position: relative;
     display: inline-block;
   }
 
-  .dropdown-content {
+  .dropdown:hover {
+    .first-dropdown {
+      display: block;
+    }
+    .region-button {
+      text-align: center;
+      font-family: Neuton;
+      font-size: 40px;
+      padding: 10px 10px 10px 10px;
+    }
+    .country-button {
+      text-align: center;
+      font-family: Neuton;
+      font-size: 25px;
+      padding: 10px 10px 10px 10px;
+      cursor: pointer;
+    }
+  }
+  .region-button:hover {
+    background-color: rgb(119, 119, 119);
+    cursor: pointer;
+  }
+  .country-button:hover {
+    background-color: rgb(119, 119, 119);
+    cursor: pointer;
+  }
+  .first-dropdown {
     display: none;
     position: absolute;
     background-color: black;
     color: white;
-    min-width: 100px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
   }
-
-  .dropdown-content a {
+  .second-dropdown {
+    position: absolute;
+    background-color: black;
     color: white;
-    padding: 12px 16px;
-    text-decoration: none;
+    margin-left: 258px;
+    margin-top: -70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .all-countries {
+    display: none;
+  }
+  .all-countries:hover {
     display: block;
   }
 
-  .dropdown-content a:hover {
-    background-color: rgb(119, 119, 119);
-  }
-
-  .dropdown:hover .dropdown-content {
+  .region-button:hover + .all-countries {
     display: block;
-  }
-
-  .dropdown:hover .dropbtn {
-    background-color: rgb(119, 119, 119);
   }
 }
 </style>
