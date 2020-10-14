@@ -1,7 +1,7 @@
 <template>
   <div>
     <bigger-header />
-    <tag-content v-bind:tag="{tag}" />
+    <tag-content />
     <the-footer />
   </div>
 </template>
@@ -12,7 +12,7 @@ import TagContent from '@/components/TagContent'
 import TheFooter from '@/components/TheFooter'
 
 export default {
-  name: 'Home',
+  name: 'tag-content-page',
   components: {
     BiggerHeader,
     TagContent,

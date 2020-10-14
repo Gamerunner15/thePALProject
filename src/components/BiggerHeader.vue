@@ -10,8 +10,12 @@
         </router-link>
       </div>
       <div id="right">
-        <h2>Search</h2>
+        <h2>Search:</h2>
         <input type="text" />
+        <div class="login-signup">
+          <a><h2>Login / SignUp</h2>
+          </a>
+        </div>
         <i class="fa fa-user"></i>
       </div>
     </header>
@@ -21,7 +25,9 @@
         <button class="dropbtn"><h1>Genres</h1></button>
         <div class="first-dropdown">
           <div v-for="genre in genres" :key="genre">
-            <a class="region-button">{{ genre }}</a>
+            <div @click="commitTag(genre)" class="region-button">
+            <router-link to="/content">{{ genre }}</router-link>
+            </div>
           </div>
         </div>
       </div>
@@ -29,13 +35,13 @@
         <button class="dropbtn"><h1>Regions</h1></button>
         <div class="first-dropdown">
           <div v-for="region in locales" :key="region.name">
-            <div class="region-button">
-              <router-link to="/content/:region.name">{{ region.name }}</router-link>
+            <div @click="commitTag(region.name)" class="region-button">
+              <router-link to="/content">{{ region.name }}</router-link>
             </div>
             <div class="all-countries">
               <div class="second-dropdown">
                   <a v-for="country in region.countries"
-                :key="country.name" class="country-button">{{ country.name }}</a>
+                :key="country.name" class="country-button" @click="commitTag(region.name)">{{ country.name }}</a>
               </div>
             </div>
           </div>
@@ -56,6 +62,12 @@ export default {
       locales: [],
       genres: [],
     };
+  },
+  methods: {
+    commitTag(newTag){
+      this.$store.commit("updateTag", newTag);
+      this.$router.push('/content');
+    }
   },
   created() {
     this.locales = FakeService.getLocales();
@@ -95,8 +107,17 @@ export default {
     }
     i {
       padding-right: 40px;
-      padding-left: 40px;
       font-size: 50px;
+    }
+    .login-signup {
+      cursor: pointer;
+      border: 2px solid white;
+      border-radius: 6px;
+      margin-left: 20px;
+      margin-right: 20px;
+      h2{
+        padding: 10px 20px 10px 20px;
+      }
     }
   }
   .bar {

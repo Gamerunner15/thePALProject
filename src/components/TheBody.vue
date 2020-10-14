@@ -7,83 +7,88 @@
     <div class="content-row">
       <i class="fa fa-angle-left"></i>
       <div class="content-preview">
-        <h2>Borborbor Rituals</h2>
-        <img src="..\assets\woman-green-head.jpg" />
+        <h2>The Singing Tortoise</h2>
+        <img src="..\assets\SingingTortoise.png" />
         <div class="tags">
-          <p class="tag">#NorthAfrica</p>
-          <p class="tag">#Borborbor</p>
+          <p class="tag">#Folktale</p>
+          <p class="tag">#Ghana</p>
         </div>
       </div>
       <div class="content-preview">
-        <h2>Ekombi Families</h2>
-        <img src="..\assets\man-red-background.jpg" />
+        <h2>Ananse's Pot of Wisdom</h2>
+        <img src="..\assets\AnansesPot.png" />
         <div class="tags">
-          <p class="tag">#SouthAfrica</p>
+          <p class="tag">#Ghana</p>
           <p class="tag">#Ekombi</p>
         </div>
       </div>
       <div class="content-preview">
-        <h2>Bambara Foods</h2>
-        <img src="..\assets\woman-in-crowd.jpg" />
+        <h2>Tortoise and the Magic Drum</h2>
+        <img src="..\assets\TortoiseandMagicDrum.png" />
         <div class="tags">
           <p class="tag">#WestAfrica</p>
-          <p class="tag">#Bambara</p>
+          <p class="tag">#Nigeria</p>
         </div>
       </div>
       <div class="content-preview">
-        <h2>Kente Clothing</h2>
-        <img src="..\assets\woman-smiling.jpg" />
-        <div class="tags">
-          <p class="tag">#SouthAmerica</p>
-          <p class="tag">#Kente</p>
-        </div>
-      </div>
-      <div class="content-preview">
-        <h2>Lukonzo in Heart</h2>
-        <img src="..\assets\woman-pink-background.jpg" />
+        <h2>Tan Baby and the Hen</h2>
+        <img src="..\assets\TanBaby.png" />
         <div class="tags">
           <p class="tag">#Caribbean</p>
-          <p class="tag">#Lukonzo</p>
+          <p class="tag">#Trinidad</p>
+        </div>
+      </div>
+      <div class="content-preview">
+        <h2>Tortoise Takes Revenge</h2>
+        <img src="..\assets\TortoiseTakesRevenge.png" />
+        <div class="tags">
+          <p class="tag">#Nigeria</p>
+          <p class="tag">#Folktale</p>
         </div>
       </div>
       <i class="fa fa-angle-right"></i>
     </div>
-    <h1 class="topic-title">Genres</h1>
+    <h1 class="topic-title">Folktales</h1>
     <div class="content-row">
       <i class="fa fa-angle-left"></i>
       <div class="content-preview">
-        <h2>Xhosa</h2>
-        <img src="..\assets\woman-green-head.jpg" />
+        <h2>The Legend of Gang Gang Sara</h2>
+        <img src="..\assets\GangGangSara.png" />
         <div class="tags">
-          <p class="tag">Folktale</p>
+          <p class="tag">#Legend</p>
+          <p class="tag">#Trinidad</p>
         </div>
       </div>
       <div class="content-preview">
-        <h2>Ananse</h2>
-        <img src="..\assets\man-red-background.jpg" />
+        <h2>Buki Gets a Beating</h2>
+        <img src="..\assets\BukiGetsaBeating.png" />
         <div class="tags">
-          <p class="tag">History</p>
+          <p class="tag">#Folktale</p>
+          <p class="tag">#Senegal</p>
         </div>
       </div>
       <div class="content-preview">
-        <h2>Brer Rabbit</h2>
-        <img src="..\assets\woman-in-crowd.jpg" />
+        <h2>Brer Rabbit and the Tar Baby</h2>
+        <img src="..\assets\BrerRabbitTarBaby.png" />
         <div class="tags">
-          <p class="tag">Comedy</p>
+          <p class="tag">#Folktale</p>
+          <p class="tag">#America</p>
         </div>
       </div>
       <div class="content-preview">
-        <h2>Agbadza</h2>
-        <img src="..\assets\woman-smiling.jpg" />
+        <h2>Marilny's Douen</h2>
+        <img src="..\assets\MarilnysDouen.png" />
         <div class="tags">
-          <p class="tag">Tradition</p>
+          <p class="tag">#Caribbean</p>
+          <p class="tag">#Tobago</p>
         </div>
       </div>
       <div class="content-preview">
-        <h2>Swathi on Guard</h2>
-        <img src="..\assets\woman-pink-background.jpg" />
+        <h2>Nuh Trouble Trouble ...</h2>
+        <img src="..\assets\NuhTroubleTrouble.png" />
         <div class="tags">
-          <p class="tag">Drama</p>
+          <p @click="commitTag('Caribbean')" class="tag">#Caribbean</p>
+          <p class="tag">#Trinidad</p>
         </div>
       </div>
       <i class="fa fa-angle-right"></i>
@@ -122,28 +127,28 @@
     <div class="content-row tag-row">
       <i class="fa fa-angle-left"></i>
       <div class="content-preview">
-        <div class="tags" style="background-color: black;">
+        <div class="tags" @click="commitTag('SouthAfrica')" style="background-color: black;">
           <p class="tag">#SouthAfrica</p>
         </div>
       </div>
       <div class="content-preview">
-        <div class="tags" style="background-color: red;">
+        <div class="tags" @click="commitTag('NorthAfrica')" style="background-color: red;">
           <p class="tag">#NorthAfrica</p>
         </div>
       </div>
       <div class="content-preview">
-        <div class="tags"  style="background-color: orange;">
+        <div class="tags" @click="commitTag('Yoruba')"  style="background-color: orange;">
           <p class="tag">#Yoruba</p>
         </div>
       </div>
       <div class="content-preview">
-        <div class="tags"  style="background-color: #007BA7;">
+        <div class="tags" @click="commitTag('Khasa')"  style="background-color: #007BA7;">
           <p class="tag">#Khasa</p>
         </div>
       </div>
       <div class="content-preview"  style="background-color: salmon;">
         <div class="tags">
-          <p class="tag">#Ukara</p>
+          <a @click="commitTag('Ukara')"><p class="tag">#Ukara</p></a>
         </div>
       </div>
       <i class="fa fa-angle-right"></i>
@@ -152,7 +157,15 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: 'the-body',
+  methods: {
+    commitTag(newTag){
+      this.$store.commit("updateTag", newTag);
+      this.$router.push('content');
+    }
+  },
+};
 </script>
 
 <style lang="scss">
@@ -171,8 +184,8 @@ export default {};
   align-items: center;
   padding-bottom: 40px;
   img {
-    width: 200px;
-    height: 300px;
+    max-width: 300px;
+    height: 350px;
     object-fit: cover;
     border-top: 5px solid black;
     border-bottom: 5px solid black;

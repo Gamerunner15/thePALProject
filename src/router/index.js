@@ -9,10 +9,9 @@ const routes = [
     component: Home
   },
   {
-    path: '/content/:tag',
+    path: '/content',
     name: 'tag-content-page',
     component: TagContentPage,
-    props: true,
   }
 ]
 
